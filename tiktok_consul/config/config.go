@@ -9,9 +9,7 @@ import (
 //	return "192.168.50.145"
 //}
 
-//const ConsulIP string = "10.211.55.5"
-
-const ConsulIP = "124.71.11.189"
+const ConsulIP string = "10.211.55.5"
 const ConsulPort = 8500
 
 func GetLocalIpAddress() (ipv4 string, err error) {

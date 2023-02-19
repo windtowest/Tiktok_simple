@@ -1,11 +1,13 @@
-package main
+package tiktok_relation
 
 import (
+	"Tiktok_simple/config"
 	"Tiktok_simple/dao"
 	relation_gorm "Tiktok_simple/kitex_gen/relation_gorm/userservice"
 	"Tiktok_simple/middleware/rabbitmq"
 	"Tiktok_simple/middleware/redis"
 	"github.com/cloudwego/kitex/server"
+	etcd "github.com/kitex-contrib/registry-etcd"
 	"log"
 	"net"
 )
@@ -14,14 +16,19 @@ func main() {
 
 	initDeps()
 
+	// 返回的 是 registry.Registry 类型，是用于向 Etcd 注册和注销的方法
+	r, err := etcd.NewEtcdRegistry([]string{config.EtcdAddress})
+	if err != nil {
+		panic(err)
+	}
 	addr, _ := net.ResolveTCPAddr("tcp", ":8801")
 
 	var opts []server.Option
-	opts = append(opts, server.WithServiceAddr(addr))
+	opts = append(opts, server.WithServiceAddr(addr), server.WithRegistry(r))
 
 	svr := relation_gorm.NewServer(new(UserServiceImpl), opts...)
 
-	err := svr.Run()
+	err = svr.Run()
 
 	if err != nil {
 		log.Println(err.Error())

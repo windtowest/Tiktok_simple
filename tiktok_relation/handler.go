@@ -1,4 +1,4 @@
-package main
+package tiktok_relation
 
 import (
 	relation_gorm "Tiktok_simple/kitex_gen/relation_gorm"

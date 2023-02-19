@@ -12,6 +12,9 @@ var OneMonth = 60 * 60 * 24 * 30
 var OneYear = 365 * 60 * 60 * 24
 var ExpireTime = time.Hour * 48 // 设置Redis数据热度消散时间。
 
+// etcd地址
+const EtcdAddress = "127.0.0.1:2379"
+
 // VideoCount 每次获取视频流的数量
 const VideoCount = 5
 

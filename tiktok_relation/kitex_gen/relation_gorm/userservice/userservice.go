@@ -3,7 +3,7 @@
 package userservice
 
 import (
-	relation_gorm "Tiktok_simple/kitex_gen/relation_gorm"
+	relation_gorm "Tiktok_simple/tmp/kitex_gen/relation_gorm"
 	"context"
 	client "github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"

@@ -1,9 +1,8 @@
-package tiktok_relation
+package main
 
 import (
 	relation_gorm "Tiktok_simple/kitex_gen/relation_gorm"
 	"Tiktok_simple/service"
-	"Tiktok_simple/util"
 	"context"
 	"log"
 )
@@ -14,7 +13,7 @@ type UserServiceImpl struct{}
 // Action implements the UserServiceImpl interface.
 func (s *UserServiceImpl) Action(ctx context.Context, req *relation_gorm.ActionRequest) (resp *relation_gorm.ActionResponse, err error) {
 
-	userId := util.GetUserIdByToken(req.Token)
+	userId := req.UserId
 	// 正常处理
 	fsi := service.NewFSIInstance()
 	switch {

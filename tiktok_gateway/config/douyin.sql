@@ -4,7 +4,7 @@
  Source Server         : 抖音
  Source Server Type    : MySQL
  Source Server Version : 50650
- Source Host           : 101.34.4.141:3306
+ Source Host           : 43.138.25.60:3306
  Source Schema         : douyin
 
  Target Server Type    : MySQL
@@ -16,12 +16,6 @@
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
-
-drop user if exists 'douyin'@'%';
--- 支持emoji：需要mysql数据库参数： character_set_server=utf8mb4
-create user 'douyin'@'%' identified by 'douyin2023';
-grant all privileges on douyin.* to 'douyin'@'%';
-flush privileges;
 
 -- ----------------------------
 -- Table structure for comments

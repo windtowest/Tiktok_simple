@@ -31,7 +31,7 @@ struct FriendUser {
 }
 
 struct ActionRequest{
-    1: string token (api.body="token", api.form="token", api.vd="len($) > 0")
+    1: i64 user_id (api.body="user_id", api.form="user_id", api.vd="$ > 0")
     2: i64 to_user_id (api.body="to_user_id", api.form="to_user_id", api.vd="$ > 0")
     3: i32 action_type (api.body="action_type", api.form="action_type", api.vd="$ == 1||$ == 2")
 }
@@ -43,7 +43,6 @@ struct ActionResponse{
 
 struct FollowListRequest{
     1: i64 user_id (api.body="user_id", api.form="user_id", api.vd="$ > 0")
-    2: string token (api.body="token", api.form="token", api.vd="len($) > 0")
 }
 
 struct FollowListResponse{
@@ -54,7 +53,6 @@ struct FollowListResponse{
 
 struct FollowerListRequest{
     1: i64 user_id (api.body="user_id", api.form="user_id", api.vd="$ > 0")
-    2: string token (api.body="token", api.form="token", api.vd="len($) > 0")
 }
 
 struct FollowerListResponse{
@@ -65,7 +63,6 @@ struct FollowerListResponse{
 
 struct FriendListRequest{
     1: i64 user_id (api.body="user_id", api.form="user_id", api.vd="$ > 0")
-    2: string token (api.body="token", api.form="token", api.vd="len($) > 0")
 }
 
 struct FriendListResponse{

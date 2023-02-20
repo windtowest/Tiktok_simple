@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-const MQURL = "amqp://douyin:douyin2023@101.34.4.141/"
+const MQURL = "amqp://tiktok:tiktok@106.14.75.229:5672/"
 
 type RabbitMQ struct {
 	conn  *amqp.Connection

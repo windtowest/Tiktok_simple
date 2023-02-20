@@ -2,7 +2,7 @@
 package userservice
 
 import (
-	relation_gorm "Tiktok_simple/kitex_gen/relation_gorm"
+	relation_gorm "Tiktok_simple/tmp/kitex_gen/relation_gorm"
 	server "github.com/cloudwego/kitex/server"
 )
 

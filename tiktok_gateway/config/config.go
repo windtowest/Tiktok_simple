@@ -2,6 +2,9 @@ package config
 
 import "time"
 
+// etcd地址
+const EtcdAddr = "101.34.4.141:2379"
+
 // Secret 密钥
 var Secret = "tiktok"
 
@@ -12,24 +15,21 @@ var OneMonth = 60 * 60 * 24 * 30
 var OneYear = 365 * 60 * 60 * 24
 var ExpireTime = time.Hour * 48 // 设置Redis数据热度消散时间。
 
-// etcd地址
-const ConsulAddress = "124.71.11.189:8500"
-
 // VideoCount 每次获取视频流的数量
 const VideoCount = 5
 
 // ConConfig ftp服务器地址
-const ConConfig = "101.34.4.141:21"
+const ConConfig = "43.138.25.60:21"
 const FtpUser = "ftpuser"
 const FtpPsw = "424193726"
 const HeartbeatTime = 2 * 60
 
 // PlayUrlPrefix 存储的图片和视频的链接
-const PlayUrlPrefix = "http://101.34.4.141/"
-const CoverUrlPrefix = "http://101.34.4.141/images/"
+const PlayUrlPrefix = "http://43.138.25.60/"
+const CoverUrlPrefix = "http://43.138.25.60/images/"
 
 // HostSSH SSH配置
-const HostSSH = "101.34.4.141"
+const HostSSH = "43.138.25.60"
 const UserSSH = "ftpuser"
 const PasswordSSH = "424193726"
 const TypeSSH = "password"

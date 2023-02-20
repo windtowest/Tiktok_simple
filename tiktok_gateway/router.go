@@ -24,5 +24,5 @@ func initRouter(r *gin.Engine) {
 	apiRouter.POST("/relation/action/", jwt.Auth(), controller.RelationAction)
 	apiRouter.GET("/relation/follow/list/", jwt.Auth(), controller.GetFollowing)
 	apiRouter.GET("/relation/follower/list", jwt.Auth(), controller.GetFollowers)
-	apiRouter.GET("/relation/friend/list", jwt.Auth(), controller.GetFollowers)
+	apiRouter.GET("/relation/friend/list", jwt.Auth(), controller.GetFriendList)
 }

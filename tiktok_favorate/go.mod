@@ -1,2 +1,0 @@
-module tiktok_favorate
-			

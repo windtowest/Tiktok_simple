@@ -2,16 +2,16 @@
 // versions:
 // 	protoc-gen-go v1.28.0
 // 	protoc        v3.19.4
-// source: favorate.proto
+// source: favorite.proto
 
 package favorite
 
 import (
+	_ "Tiktok_simple/tiktok_favorite/biz/model/api"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
-	_ "tiktok_favorate/biz/model/api"
 )
 
 const (
@@ -34,7 +34,7 @@ type DouyinFavoriteActionRequest struct {
 func (x *DouyinFavoriteActionRequest) Reset() {
 	*x = DouyinFavoriteActionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_favorate_proto_msgTypes[0]
+		mi := &file_favorite_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -47,7 +47,7 @@ func (x *DouyinFavoriteActionRequest) String() string {
 func (*DouyinFavoriteActionRequest) ProtoMessage() {}
 
 func (x *DouyinFavoriteActionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_favorate_proto_msgTypes[0]
+	mi := &file_favorite_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -60,7 +60,7 @@ func (x *DouyinFavoriteActionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DouyinFavoriteActionRequest.ProtoReflect.Descriptor instead.
 func (*DouyinFavoriteActionRequest) Descriptor() ([]byte, []int) {
-	return file_favorate_proto_rawDescGZIP(), []int{0}
+	return file_favorite_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *DouyinFavoriteActionRequest) GetToken() string {
@@ -96,7 +96,7 @@ type DouyinFavoriteActionResponse struct {
 func (x *DouyinFavoriteActionResponse) Reset() {
 	*x = DouyinFavoriteActionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_favorate_proto_msgTypes[1]
+		mi := &file_favorite_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -109,7 +109,7 @@ func (x *DouyinFavoriteActionResponse) String() string {
 func (*DouyinFavoriteActionResponse) ProtoMessage() {}
 
 func (x *DouyinFavoriteActionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_favorate_proto_msgTypes[1]
+	mi := &file_favorite_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -122,7 +122,7 @@ func (x *DouyinFavoriteActionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DouyinFavoriteActionResponse.ProtoReflect.Descriptor instead.
 func (*DouyinFavoriteActionResponse) Descriptor() ([]byte, []int) {
-	return file_favorate_proto_rawDescGZIP(), []int{1}
+	return file_favorite_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *DouyinFavoriteActionResponse) GetStatusCode() int32 {
@@ -151,7 +151,7 @@ type DouyinFavoriteListRequest struct {
 func (x *DouyinFavoriteListRequest) Reset() {
 	*x = DouyinFavoriteListRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_favorate_proto_msgTypes[2]
+		mi := &file_favorite_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -164,7 +164,7 @@ func (x *DouyinFavoriteListRequest) String() string {
 func (*DouyinFavoriteListRequest) ProtoMessage() {}
 
 func (x *DouyinFavoriteListRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_favorate_proto_msgTypes[2]
+	mi := &file_favorite_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -177,7 +177,7 @@ func (x *DouyinFavoriteListRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DouyinFavoriteListRequest.ProtoReflect.Descriptor instead.
 func (*DouyinFavoriteListRequest) Descriptor() ([]byte, []int) {
-	return file_favorate_proto_rawDescGZIP(), []int{2}
+	return file_favorite_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *DouyinFavoriteListRequest) GetUserId() int64 {
@@ -207,7 +207,7 @@ type DouyinFavoriteListResponse struct {
 func (x *DouyinFavoriteListResponse) Reset() {
 	*x = DouyinFavoriteListResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_favorate_proto_msgTypes[3]
+		mi := &file_favorite_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -220,7 +220,7 @@ func (x *DouyinFavoriteListResponse) String() string {
 func (*DouyinFavoriteListResponse) ProtoMessage() {}
 
 func (x *DouyinFavoriteListResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_favorate_proto_msgTypes[3]
+	mi := &file_favorite_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -233,7 +233,7 @@ func (x *DouyinFavoriteListResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DouyinFavoriteListResponse.ProtoReflect.Descriptor instead.
 func (*DouyinFavoriteListResponse) Descriptor() ([]byte, []int) {
-	return file_favorate_proto_rawDescGZIP(), []int{3}
+	return file_favorite_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *DouyinFavoriteListResponse) GetStatusCode() int32 {
@@ -275,7 +275,7 @@ type Video struct {
 func (x *Video) Reset() {
 	*x = Video{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_favorate_proto_msgTypes[4]
+		mi := &file_favorite_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -288,7 +288,7 @@ func (x *Video) String() string {
 func (*Video) ProtoMessage() {}
 
 func (x *Video) ProtoReflect() protoreflect.Message {
-	mi := &file_favorate_proto_msgTypes[4]
+	mi := &file_favorite_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -301,7 +301,7 @@ func (x *Video) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Video.ProtoReflect.Descriptor instead.
 func (*Video) Descriptor() ([]byte, []int) {
-	return file_favorate_proto_rawDescGZIP(), []int{4}
+	return file_favorite_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *Video) GetId() int64 {
@@ -365,23 +365,17 @@ type User struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Id              *int64  `protobuf:"varint,1,req,name=id" json:"id,required" form:"id,required" query:"id,required"`                                                            // 用户id
-	Name            *string `protobuf:"bytes,2,req,name=name" json:"name,required" form:"name,required" query:"name,required"`                                                     // 用户名称
-	FollowCount     *int64  `protobuf:"varint,3,opt,name=follow_count,json=followCount" json:"follow_count,omitempty" form:"follow_count" query:"follow_count"`                    // 关注总数
-	FollowerCount   *int64  `protobuf:"varint,4,opt,name=follower_count,json=followerCount" json:"follower_count,omitempty" form:"follower_count" query:"follower_count"`          // 粉丝总数
-	IsFollow        *bool   `protobuf:"varint,5,req,name=is_follow,json=isFollow" json:"is_follow,required" form:"is_follow,required" query:"is_follow,required"`                  // true-已关注，false-未关注
-	Avatar          *string `protobuf:"bytes,6,opt,name=avatar" json:"avatar,omitempty" form:"avatar" query:"avatar"`                                                              //用户头像
-	BackgroundImage *string `protobuf:"bytes,7,opt,name=background_image,json=backgroundImage" json:"background_image,omitempty" form:"background_image" query:"background_image"` //用户个人页顶部大图
-	Signature       *string `protobuf:"bytes,8,opt,name=signature" json:"signature,omitempty" form:"signature" query:"signature"`                                                  //个人简介
-	TotalFavorited  *int64  `protobuf:"varint,9,opt,name=total_favorited,json=totalFavorited" json:"total_favorited,omitempty" form:"total_favorited" query:"total_favorited"`     //获赞数量
-	WorkCount       *int64  `protobuf:"varint,10,opt,name=work_count,json=workCount" json:"work_count,omitempty" form:"work_count" query:"work_count"`                             //作品数量
-	FavoriteCount   *int64  `protobuf:"varint,11,opt,name=favorite_count,json=favoriteCount" json:"favorite_count,omitempty" form:"favorite_count" query:"favorite_count"`         //点赞数量
+	Id            *int64  `protobuf:"varint,1,req,name=id" json:"id,required" form:"id,required" query:"id,required"`                                                   // 用户id
+	Name          *string `protobuf:"bytes,2,req,name=name" json:"name,required" form:"name,required" query:"name,required"`                                            // 用户名称
+	FollowCount   *int64  `protobuf:"varint,3,opt,name=follow_count,json=followCount" json:"follow_count,omitempty" form:"follow_count" query:"follow_count"`           // 关注总数
+	FollowerCount *int64  `protobuf:"varint,4,opt,name=follower_count,json=followerCount" json:"follower_count,omitempty" form:"follower_count" query:"follower_count"` // 粉丝总数
+	IsFollow      *bool   `protobuf:"varint,5,req,name=is_follow,json=isFollow" json:"is_follow,required" form:"is_follow,required" query:"is_follow,required"`         // true-已关注，false-未关注
 }
 
 func (x *User) Reset() {
 	*x = User{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_favorate_proto_msgTypes[5]
+		mi := &file_favorite_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -394,7 +388,7 @@ func (x *User) String() string {
 func (*User) ProtoMessage() {}
 
 func (x *User) ProtoReflect() protoreflect.Message {
-	mi := &file_favorate_proto_msgTypes[5]
+	mi := &file_favorite_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -407,7 +401,7 @@ func (x *User) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use User.ProtoReflect.Descriptor instead.
 func (*User) Descriptor() ([]byte, []int) {
-	return file_favorate_proto_rawDescGZIP(), []int{5}
+	return file_favorite_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *User) GetId() int64 {
@@ -445,52 +439,10 @@ func (x *User) GetIsFollow() bool {
 	return false
 }
 
-func (x *User) GetAvatar() string {
-	if x != nil && x.Avatar != nil {
-		return *x.Avatar
-	}
-	return ""
-}
+var File_favorite_proto protoreflect.FileDescriptor
 
-func (x *User) GetBackgroundImage() string {
-	if x != nil && x.BackgroundImage != nil {
-		return *x.BackgroundImage
-	}
-	return ""
-}
-
-func (x *User) GetSignature() string {
-	if x != nil && x.Signature != nil {
-		return *x.Signature
-	}
-	return ""
-}
-
-func (x *User) GetTotalFavorited() int64 {
-	if x != nil && x.TotalFavorited != nil {
-		return *x.TotalFavorited
-	}
-	return 0
-}
-
-func (x *User) GetWorkCount() int64 {
-	if x != nil && x.WorkCount != nil {
-		return *x.WorkCount
-	}
-	return 0
-}
-
-func (x *User) GetFavoriteCount() int64 {
-	if x != nil && x.FavoriteCount != nil {
-		return *x.FavoriteCount
-	}
-	return 0
-}
-
-var File_favorate_proto protoreflect.FileDescriptor
-
-var file_favorate_proto_rawDesc = []byte{
-	0x0a, 0x0e, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x61, 0x74, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f,
+var file_favorite_proto_rawDesc = []byte{
+	0x0a, 0x0e, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f,
 	0x12, 0x08, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x1a, 0x09, 0x61, 0x70, 0x69, 0x2e,
 	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x6f, 0x0a, 0x1b, 0x44, 0x6f, 0x75, 0x79, 0x69, 0x6e, 0x46,
 	0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71,
@@ -534,8 +486,8 @@ var file_favorate_proto_rawDesc = []byte{
 	0x6e, 0x74, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x1f, 0x0a, 0x0b, 0x69, 0x73, 0x5f, 0x66, 0x61,
 	0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x18, 0x07, 0x20, 0x02, 0x28, 0x08, 0x52, 0x0a, 0x69, 0x73,
 	0x46, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x12, 0x14, 0x0a, 0x05, 0x74, 0x69, 0x74, 0x6c,
-	0x65, 0x18, 0x08, 0x20, 0x02, 0x28, 0x09, 0x52, 0x05, 0x74, 0x69, 0x74, 0x6c, 0x65, 0x22, 0xe1,
-	0x02, 0x0a, 0x04, 0x55, 0x73, 0x65, 0x72, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20,
+	0x65, 0x18, 0x08, 0x20, 0x02, 0x28, 0x09, 0x52, 0x05, 0x74, 0x69, 0x74, 0x6c, 0x65, 0x22, 0x91,
+	0x01, 0x0a, 0x04, 0x55, 0x73, 0x65, 0x72, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20,
 	0x02, 0x28, 0x03, 0x52, 0x02, 0x69, 0x64, 0x12, 0x12, 0x0a, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x18,
 	0x02, 0x20, 0x02, 0x28, 0x09, 0x52, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x12, 0x21, 0x0a, 0x0c, 0x66,
 	0x6f, 0x6c, 0x6c, 0x6f, 0x77, 0x5f, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x18, 0x03, 0x20, 0x01, 0x28,
@@ -544,20 +496,7 @@ var file_favorate_proto_rawDesc = []byte{
 	0x18, 0x04, 0x20, 0x01, 0x28, 0x03, 0x52, 0x0d, 0x66, 0x6f, 0x6c, 0x6c, 0x6f, 0x77, 0x65, 0x72,
 	0x43, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x1b, 0x0a, 0x09, 0x69, 0x73, 0x5f, 0x66, 0x6f, 0x6c, 0x6c,
 	0x6f, 0x77, 0x18, 0x05, 0x20, 0x02, 0x28, 0x08, 0x52, 0x08, 0x69, 0x73, 0x46, 0x6f, 0x6c, 0x6c,
-	0x6f, 0x77, 0x12, 0x16, 0x0a, 0x06, 0x61, 0x76, 0x61, 0x74, 0x61, 0x72, 0x18, 0x06, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x06, 0x61, 0x76, 0x61, 0x74, 0x61, 0x72, 0x12, 0x29, 0x0a, 0x10, 0x62, 0x61,
-	0x63, 0x6b, 0x67, 0x72, 0x6f, 0x75, 0x6e, 0x64, 0x5f, 0x69, 0x6d, 0x61, 0x67, 0x65, 0x18, 0x07,
-	0x20, 0x01, 0x28, 0x09, 0x52, 0x0f, 0x62, 0x61, 0x63, 0x6b, 0x67, 0x72, 0x6f, 0x75, 0x6e, 0x64,
-	0x49, 0x6d, 0x61, 0x67, 0x65, 0x12, 0x1c, 0x0a, 0x09, 0x73, 0x69, 0x67, 0x6e, 0x61, 0x74, 0x75,
-	0x72, 0x65, 0x18, 0x08, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x73, 0x69, 0x67, 0x6e, 0x61, 0x74,
-	0x75, 0x72, 0x65, 0x12, 0x27, 0x0a, 0x0f, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x5f, 0x66, 0x61, 0x76,
-	0x6f, 0x72, 0x69, 0x74, 0x65, 0x64, 0x18, 0x09, 0x20, 0x01, 0x28, 0x03, 0x52, 0x0e, 0x74, 0x6f,
-	0x74, 0x61, 0x6c, 0x46, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x64, 0x12, 0x1d, 0x0a, 0x0a,
-	0x77, 0x6f, 0x72, 0x6b, 0x5f, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x18, 0x0a, 0x20, 0x01, 0x28, 0x03,
-	0x52, 0x09, 0x77, 0x6f, 0x72, 0x6b, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x25, 0x0a, 0x0e, 0x66,
-	0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x5f, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x18, 0x0b, 0x20,
-	0x01, 0x28, 0x03, 0x52, 0x0d, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x43, 0x6f, 0x75,
-	0x6e, 0x74, 0x32, 0x88, 0x02, 0x0a, 0x0f, 0x46, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x48,
+	0x6f, 0x77, 0x32, 0x88, 0x02, 0x0a, 0x0f, 0x46, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x48,
 	0x61, 0x6e, 0x64, 0x6c, 0x65, 0x72, 0x12, 0x7e, 0x0a, 0x0f, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x69,
 	0x74, 0x65, 0x5f, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x12, 0x25, 0x2e, 0x66, 0x61, 0x76, 0x6f,
 	0x72, 0x69, 0x74, 0x65, 0x2e, 0x44, 0x6f, 0x75, 0x79, 0x69, 0x6e, 0x46, 0x61, 0x76, 0x6f, 0x72,
@@ -573,26 +512,27 @@ var file_favorate_proto_rawDesc = []byte{
 	0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x2e, 0x44, 0x6f, 0x75, 0x79, 0x69, 0x6e, 0x46, 0x61, 0x76,
 	0x6f, 0x72, 0x69, 0x74, 0x65, 0x4c, 0x69, 0x73, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73,
 	0x65, 0x22, 0x1a, 0xca, 0xc1, 0x18, 0x16, 0x2f, 0x64, 0x6f, 0x75, 0x79, 0x69, 0x6e, 0x2f, 0x66,
-	0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x2f, 0x6c, 0x69, 0x73, 0x74, 0x2f, 0x42, 0x24, 0x5a,
-	0x22, 0x74, 0x69, 0x6b, 0x74, 0x6f, 0x6b, 0x5f, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x61, 0x74, 0x65,
-	0x2f, 0x62, 0x69, 0x7a, 0x2f, 0x6d, 0x6f, 0x64, 0x65, 0x6c, 0x2f, 0x66, 0x61, 0x76, 0x6f, 0x72,
-	0x69, 0x74, 0x65,
+	0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x2f, 0x6c, 0x69, 0x73, 0x74, 0x2f, 0x42, 0x3b, 0x5a,
+	0x39, 0x54, 0x69, 0x6b, 0x74, 0x6f, 0x6b, 0x5f, 0x73, 0x69, 0x6d, 0x70, 0x6c, 0x65, 0x2f, 0x74,
+	0x69, 0x6b, 0x74, 0x6f, 0x6b, 0x5f, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65, 0x2f, 0x62,
+	0x69, 0x7a, 0x2f, 0x6d, 0x6f, 0x64, 0x65, 0x6c, 0x2f, 0x69, 0x6e, 0x74, 0x65, 0x72, 0x61, 0x63,
+	0x74, 0x2f, 0x66, 0x61, 0x76, 0x6f, 0x72, 0x69, 0x74, 0x65,
 }
 
 var (
-	file_favorate_proto_rawDescOnce sync.Once
-	file_favorate_proto_rawDescData = file_favorate_proto_rawDesc
+	file_favorite_proto_rawDescOnce sync.Once
+	file_favorite_proto_rawDescData = file_favorite_proto_rawDesc
 )
 
-func file_favorate_proto_rawDescGZIP() []byte {
-	file_favorate_proto_rawDescOnce.Do(func() {
-		file_favorate_proto_rawDescData = protoimpl.X.CompressGZIP(file_favorate_proto_rawDescData)
+func file_favorite_proto_rawDescGZIP() []byte {
+	file_favorite_proto_rawDescOnce.Do(func() {
+		file_favorite_proto_rawDescData = protoimpl.X.CompressGZIP(file_favorite_proto_rawDescData)
 	})
-	return file_favorate_proto_rawDescData
+	return file_favorite_proto_rawDescData
 }
 
-var file_favorate_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_favorate_proto_goTypes = []interface{}{
+var file_favorite_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_favorite_proto_goTypes = []interface{}{
 	(*DouyinFavoriteActionRequest)(nil),  // 0: favorite.DouyinFavoriteActionRequest
 	(*DouyinFavoriteActionResponse)(nil), // 1: favorite.DouyinFavoriteActionResponse
 	(*DouyinFavoriteListRequest)(nil),    // 2: favorite.DouyinFavoriteListRequest
@@ -600,7 +540,7 @@ var file_favorate_proto_goTypes = []interface{}{
 	(*Video)(nil),                        // 4: favorite.Video
 	(*User)(nil),                         // 5: favorite.User
 }
-var file_favorate_proto_depIdxs = []int32{
+var file_favorite_proto_depIdxs = []int32{
 	4, // 0: favorite.DouyinFavoriteListResponse.video_list:type_name -> favorite.Video
 	5, // 1: favorite.Video.author:type_name -> favorite.User
 	0, // 2: favorite.FavoriteHandler.favorite_action:input_type -> favorite.DouyinFavoriteActionRequest
@@ -614,13 +554,13 @@ var file_favorate_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_favorate_proto_init() }
-func file_favorate_proto_init() {
-	if File_favorate_proto != nil {
+func init() { file_favorite_proto_init() }
+func file_favorite_proto_init() {
+	if File_favorite_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_favorate_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_favorite_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DouyinFavoriteActionRequest); i {
 			case 0:
 				return &v.state
@@ -632,7 +572,7 @@ func file_favorate_proto_init() {
 				return nil
 			}
 		}
-		file_favorate_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_favorite_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DouyinFavoriteActionResponse); i {
 			case 0:
 				return &v.state
@@ -644,7 +584,7 @@ func file_favorate_proto_init() {
 				return nil
 			}
 		}
-		file_favorate_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_favorite_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DouyinFavoriteListRequest); i {
 			case 0:
 				return &v.state
@@ -656,7 +596,7 @@ func file_favorate_proto_init() {
 				return nil
 			}
 		}
-		file_favorate_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_favorite_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DouyinFavoriteListResponse); i {
 			case 0:
 				return &v.state
@@ -668,7 +608,7 @@ func file_favorate_proto_init() {
 				return nil
 			}
 		}
-		file_favorate_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_favorite_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Video); i {
 			case 0:
 				return &v.state
@@ -680,7 +620,7 @@ func file_favorate_proto_init() {
 				return nil
 			}
 		}
-		file_favorate_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_favorite_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*User); i {
 			case 0:
 				return &v.state
@@ -697,18 +637,18 @@ func file_favorate_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_favorate_proto_rawDesc,
+			RawDescriptor: file_favorite_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_favorate_proto_goTypes,
-		DependencyIndexes: file_favorate_proto_depIdxs,
-		MessageInfos:      file_favorate_proto_msgTypes,
+		GoTypes:           file_favorite_proto_goTypes,
+		DependencyIndexes: file_favorite_proto_depIdxs,
+		MessageInfos:      file_favorite_proto_msgTypes,
 	}.Build()
-	File_favorate_proto = out.File
-	file_favorate_proto_rawDesc = nil
-	file_favorate_proto_goTypes = nil
-	file_favorate_proto_depIdxs = nil
+	File_favorite_proto = out.File
+	file_favorite_proto_rawDesc = nil
+	file_favorite_proto_goTypes = nil
+	file_favorite_proto_depIdxs = nil
 }

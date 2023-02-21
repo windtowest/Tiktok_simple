@@ -3,8 +3,8 @@
 package main
 
 import (
+	handler "Tiktok_simple/tiktok_favorite/biz/handler"
 	"github.com/cloudwego/hertz/pkg/app/server"
-	handler "tiktok_favorate/biz/handler"
 )
 
 // customizeRegister registers customize routers.

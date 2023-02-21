@@ -3,8 +3,8 @@
 package Favorite
 
 import (
+	favorite "Tiktok_simple/tiktok_favorite/biz/handler/favorite"
 	"github.com/cloudwego/hertz/pkg/app/server"
-	favorite "tiktok_favorate/biz/handler/favorite"
 )
 
 /*

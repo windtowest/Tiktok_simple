@@ -3,8 +3,8 @@
 package main
 
 import (
+	router "Tiktok_simple/tiktok_favorite/biz/router"
 	"github.com/cloudwego/hertz/pkg/app/server"
-	router "tiktok_favorate/biz/router"
 )
 
 // register registers all routers.
